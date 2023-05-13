@@ -10,17 +10,22 @@ function hantei() {
         kaisu = kaisu+1;
         console.log(kaisu);
         console.log(kaisu+"回目の予想:"+yoso);
-        if(kaisu>3){
-        if(yoso>kotae){
-            console.log("まちがい.答えはもっと大きいですよ");
-        }else if(yoso<kotae){
-            console.log("まちがい.答えはもっと小さいですよ");
-        }else if(yoso===kotae){
-            console.log("正解です.おめでとう");
+        if(kaisu<3){
+            if(yoso<kotae){
+                console.log("まちがい.答えはもっと大きいですよ");
+            }else if(yoso>kotae){
+                console.log("まちがい.答えはもっと小さいですよ");
+            }else if(yoso===kotae){
+                console.log("正解です.おめでとう");
+            }
         }if(kaisu===3){
-            console.log("まちがい.残念でした答えは"+kotae+"です.");
-        }else if(kaisu>=4){
-            console.log("答えは"+kotae+"でした. すでにゲームは終わっています")
+            if(yoso===kotae){
+                console.log("正解です.おめでとう");
+            }else{
+            console.log("まちがい.残念でした答えは "+kotae+" です.");
+            }
         }
+        if(kaisu>=4){
+            console.log("答えは "+kotae+" でした. すでにゲームは終わっています")
         }
     }
