@@ -15,17 +15,21 @@ function hantei() {
                 console.log("まちがい.答えはもっと大きいですよ");
             }else if(yoso>kotae){
                 console.log("まちがい.答えはもっと小さいですよ");
+            }if((kaisu-1)&&yoso==kotae){
+                console.log("答えは "+kotae+" でした. すでにゲームは終わっています");
             }else if(yoso===kotae){
-                console.log("正解です.おめでとう");
+                console.log("正解です.おめでとう!");
             }
         }if(kaisu===3){
-            if(yoso===kotae){
-                console.log("正解です.おめでとう");
+            if((kaisu-1)&&yoso===kotae){
+                console.log("答えは "+kotae+" でした. すでにゲームは終わっています");
+            }else if(yoso===kotae){
+                console.log("正解です.おめでとう!");
             }else{
             console.log("まちがい.残念でした答えは "+kotae+" です.");
             }
         }
         if(kaisu>=4){
-            console.log("答えは "+kotae+" でした. すでにゲームは終わっています")
+            console.log("答えは "+kotae+" でした. すでにゲームは終わっています");
         }
-    }
+}
