@@ -1,13 +1,14 @@
 let kotae = Math.floor(Math.random()*10) + 1;
 console.log('答え（デバッグ用）: ' + kotae);
 let kaisu = 0;
-hantei();
+let hantei = document.querySelector('#print');
+hantei.addEventListener('click',hantei);
 function hantei() {
     
     kaisu = kaisu+1;
     let e1 = document.querySelector('span#kaisu');
     e1.textContent = kaisu;
-    let yoso = 4; 
+    let yoso = document.querySelector('input')
     let e2 = document.querySelector('span#answer');
     e2.textContent = yoso;
 
