@@ -1,10 +1,33 @@
 h1 {
-    
-    color: navy;
+    color: #b2cbe4;
+    background: linear-gradient(to left , #a0d8ef,#00a497 );
 }
 h2 {
-    color:blue;
+    background: linear-gradient(to left , #a0d8ef,#00a497 );
+    color: #b2cbe4;
 }
 h3 {
-    color:purple;
+    background: linear-gradient(to left , #a0d8ef,#00a497 );
+    color: #b2cbe4;
 }
+p,ul {
+    background-color: #b2cbe4;
+    color: black;
+}
+div#bunkathu {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 250px;
+	grid-gap: 10px;
+	width: 1024px;
+}
+div#bunkathu1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px;
+    grid-gap: 10px;
+    width: 1024px;
+}
+#b2cbe4
+#00a497
+#a0d8ef
