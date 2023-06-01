@@ -5,7 +5,6 @@ h1{
 }
 body {
     margin: 0;
-    width: 100ww;
     height: 100vh;
     background: linear-gradient(to left,white, rgb(174, 221, 239));
 }
@@ -13,7 +12,14 @@ div#zentai{
     background: #d4f281;
     display: grid;
     grid-template-columns: 1fr ;
+    grid-template-rows: 15px;
+    grid-gap: 10px;
+    width: 500px;
+}div#ken{
+    background: #d4f281;
+    display: grid;
+    grid-template-columns: 1fr ;
     grid-template-rows: 100px;
     grid-gap: 10px;
-    width: 1000px;
+    width: 100px;
 }

@@ -5,48 +5,38 @@
         <title>世界の天気</title>
         <link rel="stylesheet" href="project.css">
         <script src="weather.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
     </head>
     <body>
         <h1>世界の天気</h1>
         <div id="zentai">
-        <p>
-        <input type="checkbox" name="whether" id="360630" value="360630">
-        <label for="360630">カイロ</label>
-
-        <input type="checkbox" name="whether" id="524901" value="524901">
-        <label for="524901">モスクワ</label>
-
-        <input type="checkbox" name="whether" id="993800" value="993800">
-        <label for="993800">ヨハネスブルク</label>
-
-        <input type="checkbox" name="whether" id="1816670" value="1816670">
-        <label for="1816670">北京</label>
-
-        <input type="checkbox" name="whether" id="1850147" value="1850147">
-        <label for="1850147">東京</label>
-
-        <input type="checkbox" name="whether" id="1880252" value="1880252">
-        <label for="1880252">シンガポール</label>
-
-        <input type="checkbox" name="whether" id="2147714" value="2147714">
-        <label for="2147714">シドニー</label>
-
-        <input type="checkbox" name="whether" id="2643743" value="2643743">
-        <label for="2643743">ロンドン</label>
-
-        <input type="checkbox" name="whether" id="2968815" value="2968815">
-        <label for="2968815">パリ</label>
-
-        <input type="checkbox" name="whether" id="3451189" value="3451189">
-        <label for="3451189">リオデジャネイロ</label>
-
-        <input type="checkbox" name="whether" id="5128581" value="5128581">
-        <label for="5128581">ニューヨーク</label>
-
-        <input type="checkbox" name="whether" id="5368361" value="5368361">
-        <label for="5368361">ロサンゼルス</label>
-        </p>
-        </div>
-        <p><button id="answer">検索</button></p>
+            <label for="toshi">都市を入力
+            </label>
+    <select name="weather" id="weather">
+        <option value="">都市を入力</option>
+        <option value="360630">カイロ</option>
+        <option value="524901">モスクワ</option>
+        <option value="993800">ヨハネスブルク</option>
+        <option value="1816670">北京</option>
+        <option value="1850147">東京</option>
+        <option value="1880252">シンガポール</option>
+        <option value="2147714">シドニー</option>
+        <option value="2643743">ロンドン</option>
+        <option value="2968815">パリ</option>
+        <option value="3451189">リオデジャネイロ</option>
+        <option value="5128581">ニューヨーク</option>
+        <option value="5368361">ロサンゼルス</option>
+    </select>
+    </div>
+    <button id="btn">検索</button>
+    <p>緯度:<span id="kekka"></span></p>
+    <p>経度:<span id="kekka1"></span></p>
+    <p>天気:<span id="kekka2"></span></p>
+    <p>最低気温:<span id="kekka3"></span></p>
+    <p>最高気温:<span id="kekka4"></span></p>
+    <p>湿度:<span id="kekka5"></span></p>
+    <p>風速:<span id="kekka6"></span></p>
+    <p>風向:<span id="kekka7"></span></p>
+    <p>都市名:<span id="kekka8"></span></p>
     </body>
 </html>
