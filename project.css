@@ -2,6 +2,7 @@ h1{
     background: linear-gradient(to left , #a0d8ef,#6359f0 );
     color:aqua;
     text-align: center;
+    font-family: fantasy;
 }
 body {
     margin-left: 10;
