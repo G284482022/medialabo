@@ -1,14 +1,18 @@
 h1 {
     color: #b2cbe4;
     background: linear-gradient(to left , #a0d8ef,#00a497 );
+    text-align: center;
+    font-family: "Kokoro";
 }
 h2 {
     background: linear-gradient(to left , #a0d8ef,#00a497 );
     color: #b2cbe4;
+    text-align: center;
 }
 h3 {
     background: linear-gradient(to left , #a0d8ef,#00a497 );
     color: #b2cbe4;
+    text-align: center;
 }
 p,ul {
     background-color: #b2cbe4;
@@ -16,15 +20,36 @@ p,ul {
 }
 div#bunkathu {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 250px;
+	grid-template-columns: 1fr ;
+	grid-template-rows: 150px;
 	grid-gap: 10px;
-	width: 1024px;
+	width: 1400px;
 }
 div#bunkathu1 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 300px;
+	grid-gap: 10px;
+	width: 1400px;
+}
+div#bunkathu2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 300px;
     grid-gap: 10px;
-    width: 1024px;
+    width: 1400px;
+}
+body {
+    margin-left: 10;
+    height: 100vh;
+    background: linear-gradient(to left,white, gray);
+}
+a:link{
+    color:purple;
+}
+a:visited{
+    color:red;
+}
+a:hover{
+    text-decoration:none;
 }

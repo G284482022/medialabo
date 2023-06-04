@@ -4,7 +4,7 @@ h1{
     text-align: center;
 }
 body {
-    margin: 0;
+    margin-left: 10;
     height: 100vh;
     background: linear-gradient(to left,white, rgb(174, 221, 239));
 }
@@ -15,11 +15,31 @@ div#zentai{
     grid-template-rows: 15px;
     grid-gap: 10px;
     width: 500px;
-}div#ken{
+}
+div#ken{
     background: #d4f281;
     display: grid;
     grid-template-columns: 1fr ;
     grid-template-rows: 100px;
     grid-gap: 10px;
     width: 100px;
+}
+span{
+    padding-left:   15px;
+}
+body{
+    padding-left:   50px;
+    padding-right:   50px;
+}
+div#kek{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    grid-gap: 10px;
+    width: 500px;
+    padding : 20px ;
+    border : 5px solid yellow ;
+}
+div.box{
+    background: rgb(22, 208, 208);
 }

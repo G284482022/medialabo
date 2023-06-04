@@ -75,7 +75,7 @@ function showResult(resp){
   let e2 = document.querySelector('span#kekka1');
     e2.textContent = data.coord.lat;
   let e3 = document.querySelector('span#kekka2');
-    e3.textContent = data.weather.description;
+    e3.textContent = data.weather[0].description;
   let e4 = document.querySelector('span#kekka3');
     e4.textContent = data.main.temp_min;
   let e5 = document.querySelector('span#kekka4');
