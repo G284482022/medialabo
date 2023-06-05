@@ -44,3 +44,7 @@ div#kek{
 div.box{
     background: rgb(22, 208, 208);
 }
+img{
+    height:300px;
+    width:350px;
+}

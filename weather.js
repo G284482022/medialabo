@@ -89,6 +89,42 @@ function showResult(resp){
   let e9 = document.querySelector('span#kekka8');
     e9.textContent = data.name;
 }
+let c1 = document.querySelector('#cell1');
+c1.addEventListener('mouseover', changeColor);
+
+let c2 = document.querySelector('#cell2');
+c2.addEventListener('mouseover', changeColor);
+
+let c3 = document.querySelector('#cell3');
+c3.addEventListener('mouseover', changeColor);
+
+let c4 = document.querySelector('#cell4');
+c4.addEventListener('mouseover', changeColor);
+
+let c5 = document.querySelector('#cell5');
+c5.addEventListener('mouseover', changeColor);
+
+let c6 = document.querySelector('#cell6');
+c6.addEventListener('mouseover', changeColor);
+
+let c7 = document.querySelector('#cell7');
+c7.addEventListener('mouseover', changeColor);
+
+let c8 = document.querySelector('#cell8');
+c8.addEventListener('mouseover', changeColor);
+
+let c9 = document.querySelector('#cell');
+c9.addEventListener('mouseover', changeColor);
+
+function changeColor(event) {
+	let r = Math.floor(Math.random() * 256);
+	let g = Math.floor(Math.random() * 256);
+	let b = Math.floor(Math.random() * 256);
+	let color = 'rgb(' + r + ',' + g + ',' + b + ')';
+
+	let col = event.target;
+	col.style.backgroundColor = color;
+}
 function showError(err) {
   console.log(err);
 }
