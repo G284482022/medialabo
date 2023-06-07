@@ -15,28 +15,33 @@ function hantei() {
     let e2 = document.querySelector('span#answer');
     e2.textContent = yoso;
     let e3 = document.querySelector('p#result');
-    if(yoso === kotae){
-        cnt = cnt+1;
-        if(kaisu === 1 && cnt === 1){
+ 
+    if(kaisu===1){
+        if(kotae===yoso){
             e3.textContent = '正解です.おめでとう!';
-        }else if(kaisu === 2 && cnt === 1){
-            e3.textContent = '正解です.おめでとう!';
-        }else if(kaisu === 2 && cnt === 2){
-            e3.textContent = '答えは '+kotae+' でした. すでにゲームは終わっています';
-        }else if(kaisu === 3 && cnt ===1){
-            e3.textContent = '正解です.おめでとう!';
-        }else if(kaisu >= 3&&cnt > 3){
-            e3.textContent = '答えは '+kotae+' でした. すでにゲームは終わっています';
+        }else if(kotae>yoso){
+            e3.textContent = 'まちがい.答えはもっと大きいですよ';
+        }else if(kotae<yoso){
+            e3.textContent = 'まちがい.答えはもっと小さいですよ';
         }
-    }else if(kaisu === 3){
-        if(kotae !== yoso){
-        e3.textContent = 'まちがい.残念でした答えは'+kotae+'です.';
+    }
+    if(kaisu===2){
+        if(kotae===yoso){
+            e3.textContent = '正解です.おめでとう!';
+        }else if(kotae>yoso){
+            e3.textContent = 'まちがい.答えはもっと大きいですよ';
+        }else if(kotae<yoso){
+            e3.textContent = 'まちがい.答えはもっと小さいですよ';
         }
-    }else if(kotae > yoso){
-        e3.textContent = 'まちがい.答えはもっと大きいですよ';
-    }else if(yoso > kotae){
-        e3.textContent = 'まちがい.答えはもっと小さいですよ';
-    }else if(kaisu >= 4){
+    }
+    if(kaisu===3){
+        if(kotae===yoso){
+            e3.textContent = '正解です.おめでとう!';
+        }else{
+            e3.textContent = 'まちがい.残念でした答えは'+kotae+'です.';
+        }
+    }
+    if(kaisu>3){
         e3.textContent = '答えは '+kotae+' でした. すでにゲームは終わっています';
-    } 
+    }
 }
