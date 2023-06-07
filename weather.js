@@ -88,6 +88,41 @@ function showResult(resp){
     e8.textContent = data.wind.deg;
   let e9 = document.querySelector('span#kekka8');
     e9.textContent = data.name;
+
+  let k = document.querySelector('span#kou');
+    k.textContent = '緯度:';
+  let k1 = document.querySelector('span#kou1');
+    k1.textContent = '経度:';
+  let k2 = document.querySelector('span#kou2');
+    k2.textContent = '天気:';
+  let k3 = document.querySelector('span#kou3');
+    k3.textContent = '最低気温:';
+  let k4 = document.querySelector('span#kou4');
+    k4.textContent = '最高気温:';
+  let k5 = document.querySelector('span#kou5');
+    k5.textContent = '湿度:';
+  let k6= document.querySelector('span#kou6');
+    k6.textContent = '風速:';
+  let k7 = document.querySelector('span#kou7');
+    k7.textContent = '風向:';
+  let k8 = document.querySelector('span#kou8');
+    k8.textContent = '都市名:';
+
+  let d = document.querySelector('span#do');
+    d.textContent = '度';
+  let d1 = document.querySelector('span#do1');
+    d1.textContent = '度';
+  let d2 = document.querySelector('span#doc');
+    d2.textContent = '°C';
+  let d3 = document.querySelector('span#doc1');
+    d3.textContent = '°C';
+  let d4 = document.querySelector('span#per');
+    d4.textContent = '%';
+  let d5 = document.querySelector('span#mmai');
+    d5.textContent = 'm/s';
+  let d6 = document.querySelector('span#kt');
+    d6.textContent = 'kt';
+   
 }
 let c1 = document.querySelector('#cell1');
 c1.addEventListener('mouseover', changeColor);
@@ -115,6 +150,8 @@ c8.addEventListener('mouseover', changeColor);
 
 let c9 = document.querySelector('#cell');
 c9.addEventListener('mouseover', changeColor);
+
+
 
 function changeColor(event) {
 	let r = Math.floor(Math.random() * 256);
